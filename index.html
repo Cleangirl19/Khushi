@@ -1,0 +1,1070 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- ✅ SEO: Page Title (most important for Google) -->
+  <title>Cleangirl | Skincare Blog for Minimal, Glowing Skin</title>
+
+  <!-- ✅ SEO: Meta Description (shows under your link on Google) -->
+  <meta name="description" content="Cleangirl is your go-to skincare blog for honest product reviews, beginner-friendly routines, and ingredient breakdowns. Glow up with clean, minimal skincare.">
+
+  <!-- ✅ SEO: Keywords -->
+  <meta name="keywords" content="skincare blog, clean girl skincare, skincare routine, skin tips, skincare reviews, beginner skincare, minimal skincare, glowing skin, drugstore skincare, niacinamide, vitamin c serum, SPF skincare">
+
+  <!-- ✅ SEO: Author -->
+  <meta name="author" content="Cleangirl">
+
+  <!-- ✅ SEO: Robots (tells Google to index your site) -->
+  <meta name="robots" content="index, follow">
+
+  <!-- ✅ SEO: Canonical URL (replace with your actual website URL) -->
+  <link rel="canonical" href="https://www.cleangirl.com/">
+
+  <!-- ✅ SEO: Open Graph (for sharing on Facebook, WhatsApp, etc.) -->
+  <meta property="og:title" content="Cleangirl | Skincare Blog for Minimal, Glowing Skin">
+  <meta property="og:description" content="Honest skincare reviews, minimal routines, and ingredient breakdowns — for the girl who keeps it clean.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.cleangirl.com/">
+  <meta property="og:image" content="https://www.cleangirl.com/og-image.jpg">
+  <meta property="og:site_name" content="Cleangirl">
+
+  <!-- ✅ SEO: Twitter Card (for sharing on Twitter/X) -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Cleangirl | Skincare Blog">
+  <meta name="twitter:description" content="Honest skincare reviews, minimal routines, and ingredient breakdowns for glowing skin.">
+  <meta name="twitter:image" content="https://www.cleangirl.com/og-image.jpg">
+
+  <!-- ✅ SEO: Structured Data / Schema Markup (helps Google understand your site) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    "name": "Cleangirl",
+    "description": "Honest skincare reviews, minimal routines, and ingredient breakdowns for glowing skin.",
+    "url": "https://www.cleangirl.com/",
+    "author": {
+      "@type": "Person",
+      "name": "Cleangirl"
+    },
+    "inLanguage": "en",
+    "genre": "Beauty & Skincare"
+  }
+  </script>
+
+  <!-- ✅ Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --purple-light: #EEEDFE;
+      --purple-mid: #AFA9EC;
+      --purple-deep: #7F77DD;
+      --purple-dark: #534AB7;
+      --white: #FEFEFE;
+      --off-white: #FAF9FD;
+      --text-dark: #26215C;
+      --text-mid: #534AB7;
+      --text-light: #9895C8;
+    }
+
+    body {
+      font-family: 'Jost', sans-serif;
+      background: var(--off-white);
+      color: var(--text-dark);
+      min-height: 100vh;
+    }
+
+    /* ===== NAV ===== */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.5rem 3rem;
+      background: var(--white);
+      border-bottom: 1px solid var(--purple-light);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .logo {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2rem;
+      font-weight: 300;
+      color: var(--purple-dark);
+      letter-spacing: 0.08em;
+      text-decoration: none;
+    }
+
+    .logo span { font-style: italic; color: var(--purple-deep); }
+
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+      list-style: none;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      font-size: 0.78rem;
+      font-weight: 500;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--text-mid);
+      transition: color 0.2s;
+    }
+
+    .nav-links a:hover { color: var(--purple-deep); }
+
+    /* ===== HERO ===== */
+    .hero {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      min-height: 85vh;
+      overflow: hidden;
+    }
+
+    .hero-text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 5rem 4rem 5rem 5rem;
+    }
+
+    .hero-eyebrow {
+      font-size: 0.72rem;
+      font-weight: 500;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--text-light);
+      margin-bottom: 1.5rem;
+    }
+
+    /* ✅ SEO: h1 contains main keyword */
+    h1.hero-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 4.8rem;
+      font-weight: 300;
+      line-height: 1.05;
+      color: var(--text-dark);
+      margin-bottom: 1.8rem;
+    }
+
+    h1.hero-title em {
+      font-style: italic;
+      color: var(--purple-deep);
+    }
+
+    .hero-desc {
+      font-size: 1rem;
+      font-weight: 300;
+      line-height: 1.8;
+      color: var(--text-mid);
+      max-width: 380px;
+      margin-bottom: 2.5rem;
+    }
+
+    .btn-primary {
+      display: inline-block;
+      padding: 0.9rem 2.2rem;
+      background: var(--purple-dark);
+      color: white;
+      text-decoration: none;
+      font-size: 0.75rem;
+      font-weight: 500;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      border-radius: 2px;
+      transition: background 0.2s;
+      width: fit-content;
+    }
+
+    .btn-primary:hover { background: var(--purple-deep); }
+
+    .btn-blog {
+      display: inline-block;
+      padding: 0.9rem 2.2rem;
+      background: transparent;
+      color: var(--purple-dark);
+      border: 1.5px solid var(--purple-dark);
+      text-decoration: none;
+      font-size: 0.75rem;
+      font-weight: 500;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      border-radius: 2px;
+      transition: all 0.2s;
+      width: fit-content;
+    }
+
+    .btn-blog:hover {
+      background: var(--purple-dark);
+      color: white;
+    }
+
+    .hero-visual {
+      background: var(--purple-light);
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .hero-blob {
+      width: 420px;
+      height: 420px;
+      background: radial-gradient(circle at 40% 40%, #CECBF6, #AFA9EC 60%, #7F77DD);
+      border-radius: 60% 40% 70% 30% / 50% 60% 40% 50%;
+      animation: morph 8s ease-in-out infinite;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    @keyframes morph {
+      0%   { border-radius: 60% 40% 70% 30% / 50% 60% 40% 50%; }
+      33%  { border-radius: 40% 60% 30% 70% / 60% 40% 60% 40%; }
+      66%  { border-radius: 70% 30% 50% 50% / 40% 70% 30% 60%; }
+      100% { border-radius: 60% 40% 70% 30% / 50% 60% 40% 50%; }
+    }
+
+    .blob-text {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.4rem;
+      font-weight: 300;
+      font-style: italic;
+      color: white;
+      text-align: center;
+      line-height: 1.5;
+      padding: 1rem;
+    }
+
+    /* ===== SECTIONS ===== */
+    .section { padding: 5rem; }
+
+    .section-label {
+      font-size: 0.72rem;
+      font-weight: 500;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--text-light);
+      margin-bottom: 0.8rem;
+    }
+
+    /* ✅ SEO: h2 tags with relevant keywords */
+    h2.section-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2.8rem;
+      font-weight: 300;
+      color: var(--text-dark);
+      margin-bottom: 3rem;
+    }
+
+    /* ===== BLOG POSTS ===== */
+    .posts-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+    }
+
+    .post-card {
+      background: var(--white);
+      border: 1px solid var(--purple-light);
+      border-radius: 4px;
+      overflow: hidden;
+      transition: transform 0.25s, box-shadow 0.25s;
+    }
+
+    .post-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 12px 40px rgba(83,74,183,0.12);
+    }
+
+    .post-img {
+      height: 200px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 3.5rem;
+    }
+
+    .post-img-1 { background: linear-gradient(135deg, #EEEDFE, #CECBF6); }
+    .post-img-2 { background: linear-gradient(135deg, #F5F0FF, #DDD8F8); }
+    .post-img-3 { background: linear-gradient(135deg, #EBE8FF, #C8C2F0); }
+
+    .post-body { padding: 1.5rem; }
+
+    .post-tag {
+      font-size: 0.68rem;
+      font-weight: 500;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--purple-dark);
+      background: var(--purple-light);
+      padding: 3px 10px;
+      border-radius: 2px;
+      display: inline-block;
+      margin-bottom: 1rem;
+    }
+
+    /* ✅ SEO: h3 tags with keyword-rich titles */
+    h3.post-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.4rem;
+      font-weight: 400;
+      line-height: 1.3;
+      color: var(--text-dark);
+      margin-bottom: 0.8rem;
+    }
+
+    .post-excerpt {
+      font-size: 0.85rem;
+      font-weight: 300;
+      line-height: 1.7;
+      color: var(--text-mid);
+      margin-bottom: 1.2rem;
+    }
+
+    .post-meta {
+      font-size: 0.72rem;
+      color: var(--text-light);
+      letter-spacing: 0.05em;
+    }
+
+    /* ===== FEATURED ===== */
+    .featured-section {
+      background: var(--purple-dark);
+      padding: 5rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: center;
+    }
+
+    .featured-label {
+      font-size: 0.72rem;
+      font-weight: 500;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--purple-mid);
+      margin-bottom: 1rem;
+    }
+
+    h2.featured-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 3rem;
+      font-weight: 300;
+      color: white;
+      line-height: 1.15;
+      margin-bottom: 1.5rem;
+    }
+
+    .featured-desc {
+      font-size: 0.95rem;
+      font-weight: 300;
+      line-height: 1.9;
+      color: var(--purple-mid);
+      margin-bottom: 2rem;
+    }
+
+    .btn-outline {
+      display: inline-block;
+      padding: 0.9rem 2.2rem;
+      border: 1px solid rgba(255,255,255,0.4);
+      color: white;
+      text-decoration: none;
+      font-size: 0.75rem;
+      font-weight: 500;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      border-radius: 2px;
+      transition: all 0.2s;
+    }
+
+    .btn-outline:hover {
+      background: rgba(255,255,255,0.1);
+      border-color: white;
+    }
+
+    .featured-quote {
+      background: rgba(255,255,255,0.07);
+      border-radius: 8px;
+      padding: 2.5rem;
+      border: 1px solid rgba(255,255,255,0.15);
+    }
+
+    .featured-quote blockquote {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.1rem;
+      font-style: italic;
+      color: rgba(255,255,255,0.7);
+      line-height: 1.9;
+      margin-bottom: 1.5rem;
+    }
+
+    .featured-quote cite {
+      font-size: 0.78rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--purple-mid);
+      font-style: normal;
+    }
+
+    /* ===== ROUTINE ===== */
+    .routine-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.5rem;
+    }
+
+    .routine-card {
+      background: var(--white);
+      border: 1px solid var(--purple-light);
+      border-radius: 4px;
+      padding: 2rem 1.5rem;
+      text-align: center;
+      transition: transform 0.2s;
+    }
+
+    .routine-card:hover { transform: translateY(-4px); }
+
+    .routine-step {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: var(--purple-light);
+      color: var(--purple-dark);
+      font-size: 0.8rem;
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 1rem;
+    }
+
+    .routine-emoji {
+      font-size: 2rem;
+      display: block;
+      margin-bottom: 0.8rem;
+    }
+
+    h3.routine-name {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.2rem;
+      font-weight: 400;
+      color: var(--text-dark);
+      margin-bottom: 0.5rem;
+    }
+
+    .routine-desc {
+      font-size: 0.8rem;
+      font-weight: 300;
+      color: var(--text-light);
+      line-height: 1.6;
+    }
+
+    /* ===== NEWSLETTER ===== */
+    .newsletter {
+      background: var(--purple-light);
+      padding: 4rem 5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    h2.newsletter-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2.5rem;
+      font-weight: 300;
+      color: var(--text-dark);
+      margin-bottom: 0.8rem;
+    }
+
+    .newsletter-sub {
+      font-size: 0.9rem;
+      font-weight: 300;
+      color: var(--text-mid);
+      margin-bottom: 2rem;
+    }
+
+    .newsletter-form {
+      display: flex;
+      gap: 0;
+      max-width: 440px;
+      width: 100%;
+    }
+
+    .newsletter-input {
+      flex: 1;
+      padding: 0.9rem 1.2rem;
+      border: 1px solid var(--purple-mid);
+      border-right: none;
+      background: white;
+      font-family: 'Jost', sans-serif;
+      font-size: 0.88rem;
+      color: var(--text-dark);
+      outline: none;
+      border-radius: 2px 0 0 2px;
+    }
+
+    .newsletter-btn {
+      padding: 0.9rem 1.5rem;
+      background: var(--purple-dark);
+      color: white;
+      border: none;
+      font-family: 'Jost', sans-serif;
+      font-size: 0.75rem;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      cursor: pointer;
+      border-radius: 0 2px 2px 0;
+      transition: background 0.2s;
+    }
+
+    .newsletter-btn:hover { background: var(--purple-deep); }
+
+    /* ===== FOOTER ===== */
+    footer {
+      background: var(--text-dark);
+      color: rgba(255,255,255,0.5);
+      padding: 2.5rem 5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .footer-logo {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.5rem;
+      font-weight: 300;
+      color: white;
+      letter-spacing: 0.08em;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 1.5rem;
+      list-style: none;
+    }
+
+    .footer-links a {
+      text-decoration: none;
+      font-size: 0.75rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.4);
+      transition: color 0.2s;
+    }
+
+    .footer-links a:hover { color: white; }
+
+    .footer-copy {
+      font-size: 0.78rem;
+      letter-spacing: 0.05em;
+    }
+
+    /* ===== PRODUCT RECOMMENDATIONS ===== */
+    .products-section {
+      padding: 5rem;
+      background: var(--white);
+    }
+
+    .product-category {
+      margin-bottom: 3.5rem;
+    }
+
+    .product-category-label {
+      font-size: 0.72rem;
+      font-weight: 500;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--text-light);
+      margin-bottom: 0.5rem;
+    }
+
+    h3.product-category-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2rem;
+      font-weight: 300;
+      color: var(--text-dark);
+      margin-bottom: 1.8rem;
+      padding-bottom: 0.8rem;
+      border-bottom: 1px solid var(--purple-light);
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .product-card {
+      background: var(--off-white);
+      border: 1px solid var(--purple-light);
+      border-radius: 8px;
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.8rem;
+      transition: transform 0.2s, box-shadow 0.2s;
+      position: relative;
+    }
+
+    .product-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 30px rgba(83,74,183,0.1);
+    }
+
+    .product-badge {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      background: var(--purple-dark);
+      color: white;
+      font-size: 0.62rem;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      padding: 3px 8px;
+      border-radius: 2px;
+    }
+
+    .product-emoji {
+      font-size: 2.2rem;
+      line-height: 1;
+    }
+
+    h4.product-name {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.15rem;
+      font-weight: 400;
+      color: var(--text-dark);
+      line-height: 1.3;
+    }
+
+    .product-desc {
+      font-size: 0.82rem;
+      font-weight: 300;
+      color: var(--text-mid);
+      line-height: 1.7;
+      flex: 1;
+    }
+
+    .product-tag-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: 0.3rem;
+    }
+
+    .product-pill {
+      font-size: 0.65rem;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--purple-dark);
+      background: var(--purple-light);
+      padding: 3px 9px;
+      border-radius: 20px;
+    }
+
+    .product-rating {
+      font-size: 0.85rem;
+      color: #C8A84B;
+      letter-spacing: 2px;
+    }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 768px) {
+      nav { padding: 1rem 1.5rem; }
+      .nav-links { display: none; }
+      .hero { grid-template-columns: 1fr; }
+      .hero-text { padding: 3rem 1.5rem; }
+      .hero-visual { height: 300px; }
+      h1.hero-title { font-size: 3rem; }
+      .hero-blob { width: 260px; height: 260px; }
+      .section { padding: 3rem 1.5rem; }
+      .posts-grid { grid-template-columns: 1fr; }
+      .featured-section { grid-template-columns: 1fr; padding: 3rem 1.5rem; }
+      .routine-grid { grid-template-columns: 1fr 1fr; }
+      .products-section { padding: 3rem 1.5rem; }
+      .newsletter { padding: 3rem 1.5rem; }
+      footer { padding: 2rem 1.5rem; flex-direction: column; gap: 1rem; text-align: center; }
+      .footer-links { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ✅ SEO: Semantic HTML — nav landmark -->
+  <nav aria-label="Main navigation">
+    <a href="/" class="logo" aria-label="Cleangirl Home">clean<span>girl</span></a>
+    <ul class="nav-links">
+      <li><a href="#routines">Routines</a></li>
+      <li><a href="#recommendations">My Picks</a></li>
+      <li><a href="#ingredients">Ingredients</a></li>
+      <li><a href="#reviews">Reviews</a></li>
+      <li><a href="https://cleangurl.blogspot.com/" target="_blank" rel="noopener noreferrer" style="color:var(--purple-deep);font-weight:500;">Blog ↗</a></li>
+      <li><a href="#about">About</a></li>
+    </ul>
+  </nav>
+
+  <!-- ✅ SEO: Main landmark -->
+  <main>
+
+    <!-- ✅ SEO: Hero with h1 containing primary keyword -->
+    <section class="hero" aria-label="Welcome to Cleangirl skincare blog">
+      <div class="hero-text">
+        <p class="hero-eyebrow">Your skincare sanctuary</p>
+        <h1 class="hero-title">Glow from<br><em>the inside</em><br>out.</h1>
+        <p class="hero-desc">Honest skincare reviews, minimal routines, and the science behind your skin — for the girl who keeps it clean.</p>
+        <div style="display:flex;gap:1rem;flex-wrap:wrap;align-items:center;">
+          <a href="#posts" class="btn-primary">Start Reading</a>
+          <a href="https://cleangurl.blogspot.com/" target="_blank" rel="noopener noreferrer" class="btn-blog">Read My Blog →</a>
+        </div>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <div class="hero-blob">
+          <p class="blob-text">"Your skin is<br>always in season."</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ✅ SEO: Blog posts section with keyword-rich h2 and h3 -->
+    <section class="section" id="posts" aria-labelledby="posts-heading">
+      <p class="section-label">Latest posts</p>
+      <h2 class="section-title" id="posts-heading">Fresh off the shelf</h2>
+      <div class="posts-grid">
+
+        <article class="post-card">
+          <div class="post-img post-img-1" aria-hidden="true">🧴</div>
+          <div class="post-body">
+            <span class="post-tag">Routine</span>
+            <!-- ✅ SEO: keyword-rich article title -->
+            <h3 class="post-title">My 5-Minute Morning Skincare Routine That Actually Works</h3>
+            <p class="post-excerpt">Less is more. Here's exactly what I reach for every morning — and why each step earns its spot in a minimal skincare routine.</p>
+            <p class="post-meta">
+              <time datetime="2025-04-20">April 20, 2025</time> · 4 min read
+            </p>
+          </div>
+        </article>
+
+        <article class="post-card">
+          <div class="post-img post-img-2" aria-hidden="true">✨</div>
+          <div class="post-body">
+            <span class="post-tag">Ingredients</span>
+            <h3 class="post-title">Niacinamide vs. Vitamin C — Which Serum Does Your Skin Need?</h3>
+            <p class="post-excerpt">Breaking down two of skincare's biggest buzzwords so you can choose what's right for your skin type and concerns.</p>
+            <p class="post-meta">
+              <time datetime="2025-04-14">April 14, 2025</time> · 6 min read
+            </p>
+          </div>
+        </article>
+
+        <article class="post-card">
+          <div class="post-img post-img-3" aria-hidden="true">🌙</div>
+          <div class="post-body">
+            <span class="post-tag">Review</span>
+            <h3 class="post-title">I Tried a $12 Drugstore Retinol for 30 Days — Honest Review</h3>
+            <p class="post-excerpt">Spoiler: it surprised me. An honest month-long diary of skin changes, purging, and the final verdict on budget retinol.</p>
+            <p class="post-meta">
+              <time datetime="2025-04-07">April 7, 2025</time> · 8 min read
+            </p>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ✅ SEO: Featured guide section -->
+    <section class="featured-section" aria-labelledby="featured-heading">
+      <div>
+        <p class="featured-label">Featured guide</p>
+        <h2 class="featured-title" id="featured-heading">Build your perfect skincare routine from scratch</h2>
+        <p class="featured-desc">Whether you're a skincare newbie or resetting after a breakout, this step-by-step guide helps you find your bare minimum — and love it.</p>
+        <a href="#" class="btn-outline">Read the guide →</a>
+      </div>
+      <div class="featured-quote">
+        <blockquote>
+          "Skincare doesn't have to be 12 steps and a second mortgage. The cleangirl approach is about understanding your skin, not overloading it."
+        </blockquote>
+        <cite>— From the Cleangirl blog</cite>
+      </div>
+    </section>
+
+    <!-- ✅ SEO: Routine section with keyword-rich headings -->
+    <section class="section" id="routines" aria-labelledby="routine-heading">
+      <p class="section-label">The cleangirl method</p>
+      <h2 class="section-title" id="routine-heading">A skincare routine that respects your skin barrier</h2>
+      <div class="routine-grid">
+        <div class="routine-card">
+          <div class="routine-step" aria-hidden="true">01</div>
+          <span class="routine-emoji" aria-hidden="true">💧</span>
+          <h3 class="routine-name">Cleanse</h3>
+          <p class="routine-desc">Gentle, non-stripping cleansers that remove without wrecking your skin barrier.</p>
+        </div>
+        <div class="routine-card">
+          <div class="routine-step" aria-hidden="true">02</div>
+          <span class="routine-emoji" aria-hidden="true">🌿</span>
+          <h3 class="routine-name">Treat</h3>
+          <p class="routine-desc">One active at a time. Targeted serums like niacinamide or retinol that actually work.</p>
+        </div>
+        <div class="routine-card">
+          <div class="routine-step" aria-hidden="true">03</div>
+          <span class="routine-emoji" aria-hidden="true">🫧</span>
+          <h3 class="routine-name">Moisturize</h3>
+          <p class="routine-desc">Lock in hydration and repair your skin's natural barrier every single day.</p>
+        </div>
+        <div class="routine-card">
+          <div class="routine-step" aria-hidden="true">04</div>
+          <span class="routine-emoji" aria-hidden="true">☀️</span>
+          <h3 class="routine-name">Protect</h3>
+          <p class="routine-desc">SPF is non-negotiable. The one step that prevents more damage than anything else.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ✅ PRODUCT RECOMMENDATIONS SECTION -->
+    <section class="products-section" id="recommendations" aria-labelledby="rec-heading">
+      <p class="section-label" style="padding: 0 0 0.5rem;">Personally tested & approved</p>
+      <h2 class="section-title" id="rec-heading" style="margin-bottom: 3rem;">My honest product picks</h2>
+
+      <!-- SHAVING -->
+      <div class="product-category">
+        <p class="product-category-label">Body care · Shaving</p>
+        <h3 class="product-category-title">Smooth skin, zero irritation</h3>
+        <div class="product-grid">
+
+          <div class="product-card">
+            <span class="product-badge">Top Pick</span>
+            <span class="product-emoji">🌙</span>
+            <h4 class="product-name">Dove Body Scrub — Moonlight Bridgerton</h4>
+            <p class="product-desc">A dreamy limited-edition scrub that buffs away dead skin and leaves you silky smooth before shaving. The scent is absolutely divine — floral, soft, and luxurious.</p>
+            <div class="product-tag-row">
+              <span class="product-pill">Exfoliating</span>
+              <span class="product-pill">Pre-shave</span>
+              <span class="product-pill">Drugstore</span>
+            </div>
+            <div class="product-rating">★★★★★</div>
+          </div>
+
+          <div class="product-card">
+            <span class="product-emoji">🪒</span>
+            <h4 class="product-name">Venus Blade</h4>
+            <p class="product-desc">The gold standard in women's razors. Sharp, reliable blades that glide effortlessly without nicks. Works best when paired with a good shave oil for the closest finish.</p>
+            <div class="product-tag-row">
+              <span class="product-pill">Razor</span>
+              <span class="product-pill">Close shave</span>
+            </div>
+            <div class="product-rating">★★★★★</div>
+          </div>
+
+          <div class="product-card">
+            <span class="product-badge">Game Changer</span>
+            <span class="product-emoji">🌺</span>
+            <h4 class="product-name">Power Stick for Her — Shave Oil in Brazilian Mist</h4>
+            <p class="product-desc">This shave oil is everything. The Brazilian Mist scent is tropical and fresh, and a few drops go a long way. Creates a protective layer that lets the razor glide with zero drag or razor burn.</p>
+            <div class="product-tag-row">
+              <span class="product-pill">Shave Oil</span>
+              <span class="product-pill">Anti-irritation</span>
+              <span class="product-pill">Sensitive skin</span>
+            </div>
+            <div class="product-rating">★★★★★</div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- SUNSCREEN -->
+      <div class="product-category">
+        <p class="product-category-label">Sun care · SPF</p>
+        <h3 class="product-category-title">SPF is non-negotiable — here's what I use</h3>
+        <div class="product-grid">
+
+          <div class="product-card">
+            <span class="product-badge">Clean Formula</span>
+            <span class="product-emoji">☀️</span>
+            <h4 class="product-name">Re'equil Sunscreen — SPF 50 PA+++</h4>
+            <p class="product-desc">Oxybenzone & OMC Free — this is my go-to for anyone with sensitive or acne-prone skin. No white cast, no greasy finish, just broad spectrum protection with a clean ingredient list.</p>
+            <div class="product-tag-row">
+              <span class="product-pill">SPF 50 PA+++</span>
+              <span class="product-pill">Chemical-free</span>
+              <span class="product-pill">No white cast</span>
+              <span class="product-pill">Sensitive skin</span>
+            </div>
+            <div class="product-rating">★★★★★</div>
+          </div>
+
+          <div class="product-card">
+            <span class="product-emoji">🌤️</span>
+            <h4 class="product-name">Neutrogena Ultra Sheer Dry Touch — SPF 70</h4>
+            <p class="product-desc">Broad spectrum SPF 70 that dries down completely matte. Perfect under makeup or on its own. One of the most trusted drugstore sunscreens for a reason — lightweight, non-greasy, and genuinely protective.</p>
+            <div class="product-tag-row">
+              <span class="product-pill">SPF 70</span>
+              <span class="product-pill">Matte finish</span>
+              <span class="product-pill">Makeup-friendly</span>
+              <span class="product-pill">Drugstore</span>
+            </div>
+            <div class="product-rating">★★★★★</div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- FACE MOISTURISER -->
+      <div class="product-category">
+        <p class="product-category-label">Face care · Moisturiser</p>
+        <h3 class="product-category-title">Hydration without the heaviness</h3>
+        <div class="product-grid">
+
+          <div class="product-card">
+            <span class="product-badge">Daily Use</span>
+            <span class="product-emoji">💧</span>
+            <h4 class="product-name">Oil-Free Moisturiser with Hyaluronic Acid & Betaine</h4>
+            <p class="product-desc">This is my everyday face moisturiser and I can't recommend it enough. Oil-free formula means no breakouts, while Hyaluronic Acid pulls moisture deep into the skin and Betaine soothes and locks it in. Lightweight, fast-absorbing, and perfect under SPF.</p>
+            <div class="product-tag-row">
+              <span class="product-pill">Oil-free</span>
+              <span class="product-pill">Hyaluronic Acid</span>
+              <span class="product-pill">Betaine</span>
+              <span class="product-pill">All skin types</span>
+            </div>
+            <div class="product-rating">★★★★★</div>
+          </div>
+
+          <div class="product-card">
+            <span class="product-emoji">✨</span>
+            <h4 class="product-name">Why Hyaluronic Acid + Betaine?</h4>
+            <p class="product-desc">Hyaluronic Acid holds up to 1000x its weight in water — plumping skin from within. Betaine is a natural humectant that calms redness and boosts HA's hydrating effect. Together they give that dewy-but-not-greasy glow that's the whole cleangirl signature.</p>
+            <div class="product-tag-row">
+              <span class="product-pill">Ingredient tip</span>
+              <span class="product-pill">Glow boost</span>
+              <span class="product-pill">Anti-redness</span>
+            </div>
+            <div class="product-rating">⭐ Cleangirl approved</div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- FACE SERUMS -->
+      <div class="product-category">
+        <p class="product-category-label">Face care · Serums</p>
+        <h3 class="product-category-title">Targeted treatments that actually deliver</h3>
+        <div class="product-grid">
+
+          <div class="product-card">
+            <span class="product-badge">Bestseller</span>
+            <span class="product-emoji">🌿</span>
+            <h4 class="product-name">Skin Nutrition Botanicals — Niacinamide 5% + Squalane Serum</h4>
+            <p class="product-desc">This is my morning serum staple. Niacinamide 5% visibly reduces pores, evens skin tone, and controls oil — while Squalane (a plant-derived oil) locks in moisture without clogging pores. Together they balance and brighten skin beautifully. Great for oily and combination skin types.</p>
+            <div class="product-tag-row">
+              <span class="product-pill">Niacinamide 5%</span>
+              <span class="product-pill">Squalane</span>
+              <span class="product-pill">Pore-minimising</span>
+              <span class="product-pill">Oil control</span>
+              <span class="product-pill">Brightening</span>
+            </div>
+            <div class="product-rating">★★★★★</div>
+          </div>
+
+          <div class="product-card">
+            <span class="product-badge">Night Booster</span>
+            <span class="product-emoji">🌙</span>
+            <h4 class="product-name">Glow Up — Hyaluronic Acid 2% + Rice Ferment Night Booster</h4>
+            <p class="product-desc">My secret weapon for waking up with glowing skin. I apply this as the last step before bed and let it work overnight. Hyaluronic Acid 2% is a higher concentration that deeply plumps, while Rice Ferment brightens and fades dark spots while you sleep. You will notice a difference within a week.</p>
+            <div class="product-tag-row">
+              <span class="product-pill">Hyaluronic Acid 2%</span>
+              <span class="product-pill">Rice Ferment</span>
+              <span class="product-pill">Night use</span>
+              <span class="product-pill">Brightening</span>
+              <span class="product-pill">Anti-dark spots</span>
+            </div>
+            <div class="product-rating">★★★★★</div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- COLLAGEN SERUM -->
+      <div class="product-category">
+        <p class="product-category-label">Face care · Collagen</p>
+        <h3 class="product-category-title">Plump, firm, and youthful skin</h3>
+        <div class="product-grid">
+
+          <div class="product-card">
+            <span class="product-badge">Luxury Pick</span>
+            <span class="product-emoji">💎</span>
+            <h4 class="product-name">Spa Scentials — Plump Collagen Serum</h4>
+            <p class="product-desc">A spa-quality collagen serum that feels incredibly luxurious on the skin. This plumping serum visibly firms and smooths fine lines with consistent use. I love using it in the evening — it absorbs beautifully and leaves skin feeling bouncy and supple by morning. A little goes a long way.</p>
+            <div class="product-tag-row">
+              <span class="product-pill">Collagen</span>
+              <span class="product-pill">Plumping</span>
+              <span class="product-pill">Anti-ageing</span>
+              <span class="product-pill">Firming</span>
+            </div>
+            <div class="product-rating">★★★★★</div>
+          </div>
+
+          <div class="product-card">
+            <span class="product-emoji">🔬</span>
+            <h4 class="product-name">Why Collagen Serums Work</h4>
+            <p class="product-desc">Collagen is the protein that keeps skin firm and plump — but our bodies produce less of it after our mid-20s. A good collagen serum helps stimulate your skin's natural production and provides hydration at a deeper level. Pair with Vitamin C to boost collagen synthesis even further.</p>
+            <div class="product-tag-row">
+              <span class="product-pill">Ingredient tip</span>
+              <span class="product-pill">Skin science</span>
+              <span class="product-pill">Cleangirl approved</span>
+            </div>
+            <div class="product-rating">⭐ Cleangirl tip</div>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+    <!-- BLOG BANNER -->
+    <div style="background:var(--purple-deep);padding:3rem 5rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:2rem;">
+      <div>
+        <p style="font-size:0.72rem;font-weight:500;letter-spacing:0.2em;text-transform:uppercase;color:var(--purple-light);margin-bottom:0.6rem;">Now live on Blogger</p>
+        <h2 style="font-family:'Cormorant Garamond',serif;font-size:2.2rem;font-weight:300;color:white;line-height:1.2;">Read my full blog posts,<br>updated weekly. ✍️</h2>
+      </div>
+      <a href="https://cleangurl.blogspot.com/" target="_blank" rel="noopener noreferrer" style="display:inline-block;padding:1rem 2.5rem;background:white;color:var(--purple-dark);text-decoration:none;font-size:0.78rem;font-weight:500;letter-spacing:0.15em;text-transform:uppercase;border-radius:2px;transition:all 0.2s;white-space:nowrap;">Visit My Blog →</a>
+    </div>
+
+    <!-- Newsletter -->
+    <div class="newsletter">
+      <h2 class="newsletter-title">Skin notes, every Sunday.</h2>
+      <p class="newsletter-sub">No spam, no pressure. Just honest skincare content delivered weekly to your inbox.</p>
+      <form class="newsletter-form" action="#" method="post" aria-label="Newsletter signup">
+        <label for="email" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);">Email address</label>
+        <input class="newsletter-input" type="email" id="email" name="email" placeholder="your@email.com" required autocomplete="email">
+        <button class="newsletter-btn" type="submit">Subscribe</button>
+      </form>
+    </div>
+
+  </main>
+
+  <!-- ✅ SEO: Footer with internal links -->
+  <footer>
+    <div class="footer-logo">cleangirl</div>
+    <ul class="footer-links">
+      <li><a href="#routines">Routines</a></li>
+      <li><a href="#posts">Blog</a></li>
+      <li><a href="#about">About</a></li>
+    </ul>
+    <p class="footer-copy">© 2025 Cleangirl · All rights reserved</p>
+  </footer>
+
+</body>
+</html>
